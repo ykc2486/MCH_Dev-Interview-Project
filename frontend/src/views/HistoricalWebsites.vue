@@ -3,17 +3,11 @@
     <h2>歷年梅竹黑客松網站</h2>
     <div class="websites-grid">
       <div v-for="website in websites" :key="website.id" class="website-card">
-        <img
-          :src="website.image_url"
-          :alt="website.name"
-          class="website-image"
-        />
+        <img :src="website.image_url" :alt="website.name" class="website-image" />
         <div class="website-info">
           <h3>{{ website.name }}</h3>
           <p>{{ website.description }}</p>
-          <a :href="website.link" target="_blank" class="view-button"
-            >查看網站</a
-          >
+          <a :href="website.link" target="_blank" class="view-button">查看網站</a>
         </div>
       </div>
     </div>
@@ -21,7 +15,25 @@
 </template>
 
 <script>
-// TODO: Fetch websites data from API
+import axios from 'axios';
+
+export default {
+  name: 'HistoricalWebsites',
+  data() {
+    return {
+      websites: []
+    }
+  },
+  created() {
+    axios.get('https://mch-dev.userwei.com/api/websites')
+      .then(response => {
+        this.websites = response.data;
+      })
+      .catch(error => {
+        console.error('取得網站資料失敗:', error);
+      });
+  }
+}
 </script>
 
 <style scoped>
@@ -39,7 +51,9 @@
 }
 
 .websites-grid {
-  /* TODO: Add styles for a responsive grid layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .website-card {
@@ -47,17 +61,19 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .website-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .website-image {
+  margin: 10px auto;
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .website-info {
@@ -65,7 +81,7 @@
 }
 
 .website-info h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 1.5rem;
   color: #333;
 }
@@ -89,3 +105,4 @@
   background-color: #36383a;
 }
 </style>
+

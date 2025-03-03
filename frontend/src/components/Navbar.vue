@@ -9,9 +9,7 @@
         <router-link to="/" class="nav-link">自我介紹</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/historical-websites" class="nav-link"
-          >歷年網站</router-link
-        >
+        <router-link to="/historical-websites" class="nav-link">歷年網站</router-link>
       </li>
     </ul>
   </nav>
@@ -33,7 +31,7 @@ export default {
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #232323;
+  background-color: #F5C944;
   padding: 1rem 5rem;
   position: sticky;
   top: 0;
@@ -53,7 +51,7 @@ export default {
 }
 
 .brand-link {
-  color: #fff;
+  color: #4a4a4a;
   font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
@@ -65,17 +63,16 @@ export default {
   gap: 1rem;
 }
 
-.nav-item {
-}
+.nav-item {}
 
 .nav-link {
-  color: #fff;
+  color: #4a4a4a;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #ddd;
+  color: #4a4a4a;
 }
 </style>

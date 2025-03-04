@@ -27,7 +27,7 @@
 export default {
   methods: {
     goToImage() {
-      window.open("https://wall.bahamut.com.tw/B/52/0e2a8da815d44b6920b777082f359ad7_5225801.JPG", "_blank")
+      window.open("https://i.imgur.com/gRXOtzZ.jpeg", "_blank")
     }
   }
 };

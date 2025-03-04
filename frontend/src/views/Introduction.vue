@@ -2,7 +2,7 @@
   <div class="introduction">
     <header class="intro-header">
       <div class="intro-container">
-        <img src="./imgs/overload.jpg" alt="godtone" class="selfie"> </img>
+        <img src="./imgs/pic.jpg" alt="godtone" class="selfie"> </img>
         <div class="text">
           <h2 class="title-text">自我介紹</h2>
           <p class="Iansui">
@@ -14,9 +14,9 @@
     <section class="about-section">
       <h3 class="title-text">個人資訊補充</h3>
       <ul class="custom-list">
-        <li class="li-color">超派</li>
-        <li class="li-color">超胖</li>
-        <li class="li-color">超棒</li>
+        <li class="li-color">希望可以挑戰自己</li>
+        <li class="li-color">樂於學習</li>
+        <li class="li-color">拜託請錄取我了 我什麼都會做的</li>
       </ul>
     </section>
   </div>

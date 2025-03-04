@@ -6,9 +6,9 @@
         <div class="text">
           <h2 class="title-text">自我介紹</h2>
           <p class="Iansui">
-            我是邱元廣，目前就讀交大資工一年級。我在高中時有接觸過一些javascript來管理資料表單的小專案。上學期修過計網概後也有嘗試去了解網路的細節與原理，並且有嘗試建立自己的VPN與DNS伺服器。盡管我在網頁開發的經驗不足，但我認為我是一個願意學習新知的人，我可以學習來補足這點。並且我也沒有團隊開發的經驗，因此我希望我可以加入梅竹黑客松的開發部，為我無趣的生活增添一些挑戰，並磨練我的技能，與同伴們一同開發出有趣又實用的專案。
+            我是邱元廣，目前就讀交大資工一年級。我在高中時有接觸過一些javascript來管理資料表單的小專案。上學期修過計網概後也有嘗試去了解網路的細節與原理，並且有嘗試建立自己的VPN與DNS伺服器。盡管我在網頁開發的經驗不足，但我認為我是一個願意學習新知的人，我可以學習來補足這點。希望我可以加入梅竹黑客松的開發部，為我無趣的生活增添一些挑戰，並磨練我的技能，與同伴們一同開發出有趣又實用的專案。
           </p>
-          <button class="contact-button" @click="goToImage">點我</button>
+          <button class="contact-button" @click="goToImage">歐內該</button>
         </div>
       </div>
     </header>
@@ -27,7 +27,7 @@
 export default {
   methods: {
     goToImage() {
-      window.open("https://i.imgur.com/gRXOtzZ.jpeg", "_blank")
+      window.open("https://cdn.discordapp.com/attachments/1187034944439074846/1346472683931566141/uncle.jpeg?ex=67c84fe8&is=67c6fe68&hm=276e96a01d94217573db0d5ea42ba9ae9ad45ae07e5bfc61a51c88490c147ab1&", "_blank")
     }
   }
 };

@@ -132,4 +132,12 @@
   background-repeat: no-repeat;
   margin-right: 8px;
 }
+
+@media screen and (max-width: 760px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 </style>
